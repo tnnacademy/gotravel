@@ -241,6 +241,7 @@ html {
 
 body {
   line-height: 1;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem; }
 
 .img-responsive {
@@ -2916,3 +2917,60 @@ body {
     padding-left: 1.5rem !important; }
   .pl-xl-5 {
     padding-left: 3rem !important; } }
+
+.header {
+  padding: 11.5px 0;
+  background-color: #3D4A86; }
+  @media (min-width: 1200px) {
+    .header {
+      padding: 21.5px 0;
+      background-color: transparent;
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.5); } }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.logo {
+  font-family: "Oswald";
+  font-size: 2.4rem;
+  color: #fff;
+  text-transform: uppercase; }
+  .logo span {
+    color: #EE9A17; }
+
+.menu {
+  display: none; }
+  @media (min-width: 1200px) {
+    .menu {
+      display: flex; } }
+  .menu li {
+    margin-left: 60px; }
+    .menu li:first-child {
+      margin-left: 0; }
+    .menu li a {
+      font-size: 1.4;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff; }
+
+.hamburguer {
+  display: block;
+  color: #fff;
+  width: 20px;
+  border-top: 1px solid;
+  cursor: pointer; }
+  @media (min-width: 1200px) {
+    .hamburguer {
+      display: none; } }
+
+.hamburguer::after,
+.hamburguer::before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 4px;
+  background: currentColor;
+  position: relative; }
