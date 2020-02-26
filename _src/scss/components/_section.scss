@@ -1,0 +1,49 @@
+.section {
+  margin: 40px 0;
+  
+  @media(min-width: 1200px) {
+    margin: 80px 0;
+  }
+}
+
+// section title
+.title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: $font_title;
+  font-weight: 900;
+  font-size: 2.6rem;
+  color: $color_primary_1;
+  
+  @media(min-width: 768px) {
+    text-align: left;
+    font-size: 3.2rem;
+  }
+  
+  @media(min-width: 1200px) {
+    font-size: 4.0rem;
+  }
+
+  &.border-left {
+    &:after {
+      content: "";
+      display: block;
+      margin: 16px auto 0 auto;
+      height: 4px;
+      width: 70px;
+      background: $color_primary_2;
+      
+      @media(min-width: 768px) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+// section description
+.section-text {
+  p {
+    margin-bottom: 24px;
+    color: $color_text;
+  }
+}

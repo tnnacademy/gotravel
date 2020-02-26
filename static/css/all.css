@@ -3019,3 +3019,54 @@ body {
   .heroCta__description {
     max-width: 375px;
     width: 100%; }
+
+.melhores-pontos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0; }
+  .melhores-pontos li {
+    padding: 5px;
+    width: 33.333%; }
+    .melhores-pontos li img {
+      border-radius: 10px;
+      display: block;
+      max-width: 100%;
+      height: auto; }
+
+.section {
+  margin: 40px 0; }
+  @media (min-width: 1200px) {
+    .section {
+      margin: 80px 0; } }
+
+.title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 2.6rem;
+  color: #3D4A86; }
+  @media (min-width: 768px) {
+    .title {
+      text-align: left;
+      font-size: 3.2rem; } }
+  @media (min-width: 1200px) {
+    .title {
+      font-size: 4.0rem; } }
+  .title.border-left:after {
+    content: "";
+    display: block;
+    margin: 16px auto 0 auto;
+    height: 4px;
+    width: 70px;
+    background: #EE9A17; }
+    @media (min-width: 768px) {
+      .title.border-left:after {
+        margin-left: 0; } }
+
+.section-text p {
+  margin-bottom: 24px;
+  color: #667788; }
