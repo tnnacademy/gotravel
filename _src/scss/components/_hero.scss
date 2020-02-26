@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  box-shadow: inset 0px 0px 1920px 800px rgba(0, 0, 0, 0.4);
+  @extend %bg-black;
 
   @media(min-width: 1200px) {
     height: 100%;

@@ -252,6 +252,9 @@ body {
   max-width: 100%;
   height: auto; }
 
+.hero, .testimonial {
+  box-shadow: inset 0px 0px 1920px 800px rgba(0, 0, 0, 0.4); }
+
 .container, .heroCta-container {
   width: 100%;
   padding-right: 15px;
@@ -2984,8 +2987,7 @@ body {
   background-image: url("../images/bg-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
-  box-shadow: inset 0px 0px 1920px 800px rgba(0, 0, 0, 0.4); }
+  background-position: center top; }
   @media (min-width: 1200px) {
     .hero {
       height: 100%; } }
@@ -3035,6 +3037,40 @@ body {
       display: block;
       max-width: 100%;
       height: auto; }
+
+.testimonial {
+  background-color: #ddd;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 1200px) {
+    .testimonial {
+      height: 660px; } }
+
+.testimonialContent {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+  color: #fff; }
+  .testimonialContent__local {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .testimonialContent__text {
+    margin: 12px 0;
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    font-weight: 900; }
+    @media (min-width: 1200px) {
+      .testimonialContent__text {
+        font-size: 4.8rem; } }
+  .testimonialContent__autor {
+    font-size: 2.2rem; }
 
 .section {
   margin: 40px 0; }
