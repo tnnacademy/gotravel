@@ -214,6 +214,9 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body, html {
+  height: 100%; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -240,7 +243,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  line-height: 1;
+  line-height: 1.4;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem; }
 
@@ -249,14 +252,14 @@ body {
   max-width: 100%;
   height: auto; }
 
-.container {
+.container, .heroCta-container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 1200px) {
-    .container {
+    .container, .heroCta-container {
       max-width: 1140px; } }
 
 .container-fluid, .container-xl {
@@ -270,7 +273,7 @@ body {
   margin-left: auto; }
 
 @media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
+  .container, .heroCta-container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px; } }
 
 .row {
@@ -2919,11 +2922,11 @@ body {
     padding-left: 3rem !important; } }
 
 .header {
-  padding: 11.5px 0;
+  padding: 8.5px 0;
   background-color: #3D4A86; }
   @media (min-width: 1200px) {
     .header {
-      padding: 21.5px 0;
+      padding: 18.25px 0;
       background-color: transparent;
       border-bottom: 0.5px solid rgba(255, 255, 255, 0.5); } }
 
@@ -2974,3 +2977,45 @@ body {
   margin-top: 4px;
   background: currentColor;
   position: relative; }
+
+.hero {
+  height: 512px;
+  background-color: #ccc;
+  background-image: url("../images/bg-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  box-shadow: inset 0px 0px 1920px 800px rgba(0, 0, 0, 0.4); }
+  @media (min-width: 1200px) {
+    .hero {
+      height: 100%; } }
+
+.heroCta-container {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  height: calc(100% - 50px); }
+  @media (min-width: 768px) {
+    .heroCta-container {
+      align-items: center; } }
+  @media (min-width: 1200px) {
+    .heroCta-container {
+      height: calc(100% - 70px); } }
+
+.heroCta {
+  max-width: 505px;
+  width: 100%;
+  color: #fff; }
+  .heroCta__meta {
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+  .heroCta__title {
+    font-family: "Pacifico";
+    font-size: 4.5rem; }
+    @media (min-width: 1200px) {
+      .heroCta__title {
+        font-size: 8.0rem; } }
+  .heroCta__description {
+    max-width: 375px;
+    width: 100%; }

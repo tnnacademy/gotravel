@@ -1,11 +1,11 @@
 // header
 // ----------
 .header {
-  padding: 11.5px 0;
+  padding: 8.5px 0;
   background-color: $color_primary_1;
 
   @media(min-width: 1200px) {
-    padding: 21.5px 0;
+    padding: 18.25px 0;
     background-color: transparent;
     border-bottom: .5px solid rgba(255, 255, 255, .5);
   }

@@ -1,0 +1,56 @@
+.hero {
+  height: 512px;
+  background-color: #ccc;
+  background-image: url('../images/bg-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  box-shadow: inset 0px 0px 1920px 800px rgba(0, 0, 0, 0.4);
+
+  @media(min-width: 1200px) {
+    height: 100%;
+  }
+}
+
+.heroCta-container {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  height: calc(100% - 50px);
+
+  @media(min-width: 768px) {
+    align-items: center;
+  }
+
+  @media(min-width: 1200px) {
+    height: calc(100% - 70px);
+  }
+
+  @extend .container;
+}
+
+.heroCta {  
+  max-width: 505px;
+  width: 100%;
+  color: #fff;
+
+  &__meta {
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  
+  &__title {
+    font-family: $font_highlight;
+    font-size: 4.5rem;
+
+    @media(min-width: 1200px) {
+      font-size: 8.0rem;
+    }
+  }
+
+  &__description {
+    max-width: 375px;
+    width: 100%;
+  }
+}
