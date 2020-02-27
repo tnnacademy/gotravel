@@ -6,17 +6,30 @@
   }
 }
 
+// section header
+.section-header {
+  
+  &.is-left,
+  &.is-center {
+    text-align: center;
+  }
+
+  &.is-left {
+    @media(min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
 // section title
 .title {
   margin-bottom: 32px;
-  text-align: center;
   font-family: $font_title;
   font-weight: 900;
   font-size: 2.6rem;
   color: $color_primary_1;
   
   @media(min-width: 768px) {
-    text-align: left;
     font-size: 3.2rem;
   }
   
@@ -24,6 +37,7 @@
     font-size: 4.0rem;
   }
 
+  &.border-center,
   &.border-left {
     &:after {
       content: "";
@@ -32,7 +46,11 @@
       height: 4px;
       width: 70px;
       background: $color_primary_2;
-      
+    }    
+  }
+
+  &.border-left {
+    &:after {      
       @media(min-width: 768px) {
         margin-left: 0;
       }

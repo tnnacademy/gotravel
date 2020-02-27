@@ -1,0 +1,123 @@
+.dicasList {
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%;
+
+  @media(min-width: 768px) {
+    max-width: 100%;
+  }  
+  
+  li {
+    padding: 2.5px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      border: 4px solid transparent;
+
+      &:hover {
+        border-color: $color_primary_2;
+      }
+    }
+    
+    @media(min-width: 768px) {
+      width: 50%;
+    }
+  }
+}
+
+.dica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 0 15px;
+  
+  @media(min-width: 1200px) {
+    height: 290px;
+  }
+
+  @extend %bg-black;
+  
+  &__title {
+    max-width: 420px;
+    width: 100%;
+    font-family: $font_title;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #fff;
+    
+    @media(min-width: 1200px) {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+.dicaBoxButton {
+  margin-top: 32px;
+  text-align: center;
+}.dicasList {
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%;
+
+  @media(min-width: 768px) {
+    max-width: 100%;
+  }  
+  
+  li {
+    padding: 2.5px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      border: 4px solid transparent;
+
+      &:hover {
+        border-color: $color_primary_2;
+      }
+    }
+    
+    @media(min-width: 768px) {
+      width: 50%;
+    }
+  }
+}
+
+.dica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 0 15px;
+  
+  @media(min-width: 1200px) {
+    height: 290px;
+  }
+
+  @extend %bg-black;
+  
+  &__title {
+    max-width: 420px;
+    width: 100%;
+    font-family: $font_title;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #fff;
+    
+    @media(min-width: 1200px) {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+.dicaBoxButton {
+  margin-top: 32px;
+  text-align: center;
+}

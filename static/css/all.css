@@ -252,7 +252,7 @@ body {
   max-width: 100%;
   height: auto; }
 
-.hero, .testimonial {
+.hero, .testimonial, .dica {
   box-shadow: inset 0px 0px 1920px 800px rgba(0, 0, 0, 0.4); }
 
 .container, .heroCta-container {
@@ -3078,31 +3078,142 @@ body {
     .section {
       margin: 80px 0; } }
 
+.section-header.is-left, .section-header.is-center {
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .section-header.is-left {
+    text-align: left; } }
+
 .title {
   margin-bottom: 32px;
-  text-align: center;
   font-family: "Playfair Display";
   font-weight: 900;
   font-size: 2.6rem;
   color: #3D4A86; }
   @media (min-width: 768px) {
     .title {
-      text-align: left;
       font-size: 3.2rem; } }
   @media (min-width: 1200px) {
     .title {
       font-size: 4.0rem; } }
-  .title.border-left:after {
+  .title.border-center:after, .title.border-left:after {
     content: "";
     display: block;
     margin: 16px auto 0 auto;
     height: 4px;
     width: 70px;
     background: #EE9A17; }
-    @media (min-width: 768px) {
-      .title.border-left:after {
-        margin-left: 0; } }
+  @media (min-width: 768px) {
+    .title.border-left:after {
+      margin-left: 0; } }
 
 .section-text p {
   margin-bottom: 24px;
   color: #667788; }
+
+.dicasList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .dicasList {
+      max-width: 100%; } }
+  .dicasList li {
+    padding: 2.5px; }
+    .dicasList li a {
+      display: block;
+      text-decoration: none;
+      border: 4px solid transparent; }
+      .dicasList li a:hover {
+        border-color: #EE9A17; }
+    @media (min-width: 768px) {
+      .dicasList li {
+        width: 50%; } }
+
+.dica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 0 15px; }
+  @media (min-width: 1200px) {
+    .dica {
+      height: 290px; } }
+  .dica__title {
+    max-width: 420px;
+    width: 100%;
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    text-align: center;
+    color: #fff; }
+    @media (min-width: 1200px) {
+      .dica__title {
+        font-size: 3.2rem; } }
+
+.dicaBoxButton {
+  margin-top: 32px;
+  text-align: center; }
+
+.dicasList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .dicasList {
+      max-width: 100%; } }
+  .dicasList li {
+    padding: 2.5px; }
+    .dicasList li a {
+      display: block;
+      text-decoration: none;
+      border: 4px solid transparent; }
+      .dicasList li a:hover {
+        border-color: #EE9A17; }
+    @media (min-width: 768px) {
+      .dicasList li {
+        width: 50%; } }
+
+.dica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 0 15px; }
+  @media (min-width: 1200px) {
+    .dica {
+      height: 290px; } }
+  .dica__title {
+    max-width: 420px;
+    width: 100%;
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    text-align: center;
+    color: #fff; }
+    @media (min-width: 1200px) {
+      .dica__title {
+        font-size: 3.2rem; } }
+
+.dicaBoxButton {
+  margin-top: 32px;
+  text-align: center; }
+
+.button {
+  display: inline-block;
+  padding: 17.5px;
+  width: 270px;
+  border-radius: 6px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff; }
+  .button.primary-1 {
+    background-color: #3D4A86; }
+  .button:hover {
+    background-color: #EE9A17; }
