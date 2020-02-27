@@ -1,8 +1,8 @@
 (function ($) {
 
-  // Testimonials
+  // Avaliacoes
   // ------------
-  $("#testimonials").slick({
+  $("#avaliacoes").slick({
     dots: false,
     prevArrow: false,
     nextArrow: false,

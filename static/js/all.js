@@ -12026,9 +12026,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 });
 
 (function ($) {
-  // Testimonials
+  // Avaliacoes
   // ------------
-  $("#testimonials").slick({
+  $("#avaliacoes").slick({
     dots: false,
     prevArrow: false,
     nextArrow: false,

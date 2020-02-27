@@ -19,7 +19,7 @@ const srcJs = [
   '../_src/js/vendors/jquery.js',
   '../_src/js/vendors/slick.js',
   '../_src/js/inc/fixed-scroll.js',
-  '../_src/js/inc/testimonial.js'
+  '../_src/js/inc/avaliacoes.js'
 ];
 
 gulp.task('js', () =>

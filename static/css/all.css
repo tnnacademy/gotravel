@@ -2955,12 +2955,23 @@ body {
     margin-left: 60px; }
     .menu li:first-child {
       margin-left: 0; }
+    .menu li.active a {
+      position: relative; }
+      .menu li.active a:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        width: 100%;
+        height: 3px;
+        background-color: #EE9A17; }
     .menu li a {
       font-size: 1.4;
       font-weight: 700;
       text-decoration: none;
       text-transform: uppercase;
       color: #fff; }
+      .menu li a:hover {
+        color: #EE9A17; }
 
 .hamburguer {
   display: block;

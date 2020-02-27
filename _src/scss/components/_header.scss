@@ -45,12 +45,29 @@
       margin-left: 0;
     }
 
+    &.active a{
+      position: relative;
+      
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        width: 100%;
+        height: 3px;
+        background-color: $color_primary_2;
+      }
+    }
+
     a {
       font-size: 1.4;
       font-weight: 700;
       text-decoration: none;
       text-transform: uppercase;
       color: #fff;
+
+      &:hover {
+        color: $color_primary_2;
+      }
     }
   }
 }
