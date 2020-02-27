@@ -3217,3 +3217,29 @@ body {
     background-color: #3D4A86; }
   .button:hover {
     background-color: #EE9A17; }
+
+.aboutThumbs {
+  display: none; }
+  @media (min-width: 768px) {
+    .aboutThumbs {
+      display: flex; } }
+  .aboutThumbs__half img {
+    margin-top: 29px; }
+    .aboutThumbs__half img:first-child {
+      margin-top: 0; }
+  .aboutThumbs__full {
+    margin-left: 30px; }
+
+.differentials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140px;
+  margin-top: 30px;
+  text-align: center; }
+  .differentials__title {
+    font-family: "Playfair Display";
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #3D4A86; }

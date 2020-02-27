@@ -1,0 +1,39 @@
+.aboutThumbs {
+  display: none;
+
+  @media(min-width: 768px) {
+    display: flex;
+  }
+
+  &__half {
+    img {
+      margin-top: 29px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  
+  &__full {
+    margin-left: 30px;
+  }
+}
+
+.differentials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140px;
+  margin-top: 30px;
+
+  text-align: center;
+    
+  &__title {
+    font-family: $font_title;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $color_primary_1;
+  }
+}
