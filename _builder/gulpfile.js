@@ -18,8 +18,9 @@ gulp.task('sass', () =>
 const srcJs = [
   '../_src/js/vendors/jquery.js',
   '../_src/js/vendors/slick.js',
-  '../_src/js/inc/fixed-scroll.js',
-  '../_src/js/inc/avaliacoes.js'
+  '../_src/js/inc/header-fixed.js',
+  '../_src/js/inc/slider-avaliacoes.js',
+  '../_src/js/inc/anchor.js'
 ];
 
 gulp.task('js', () =>
