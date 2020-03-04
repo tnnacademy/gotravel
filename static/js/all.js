@@ -12026,14 +12026,18 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 });
 
 (function ($) {
-  // menu
-  $('.menu > li').on('click', function () {
-    var ind = $(this).index();
-    var roll = $('.anchor').eq(ind).offset().top - 100;
-    $('html, body').animate({
-      scrollTop: roll
-    }, 400);
-    return false;
+  // ao rolar exibe menu fixo
+  // ---------------------------
+  $(window).scroll(function () {
+    var widthScreen = $(window).width();
+    var valScroll = $(window).scrollTop();
+    var target = $(".heroCta").outerHeight();
+
+    if (valScroll > target && widthScreen >= 1200) {
+      $('.header').addClass('fixed');
+    } else {
+      $('.header').removeClass('fixed');
+    }
   });
 })(jQuery);
 
@@ -12053,17 +12057,26 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 })(jQuery);
 
 (function ($) {
-  // ao rolar exibe menu fixo
-  // ---------------------------
-  $(window).scroll(function () {
-    var widthScreen = $(window).width();
-    var valScroll = $(window).scrollTop();
-    var target = $(".heroCta").outerHeight();
+  // menu
+  $('.menu > li').on('click', function () {
+    var ind = $(this).index();
+    var roll = $('.anchor').eq(ind).offset().top - 100;
+    $('html, body').animate({
+      scrollTop: roll
+    }, 400);
+    return false;
+  });
+})(jQuery);
 
-    if (valScroll > target && widthScreen >= 1200) {
-      $('.header').addClass('fixed');
-    } else {
-      $('.header').removeClass('fixed');
-    }
+(function ($) {
+  // hamburguer - open menu mobile
+  // ---------------------------
+  $(".hamburguer, .menu-mobile > li").click(function () {
+    $(".cortina").toggleClass("show");
+  }); // close menu mobile
+  // ---------------------------
+
+  $(".close-cortina").click(function () {
+    $(".cortina").removeClass("show");
   });
 })(jQuery);

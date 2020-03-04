@@ -1,0 +1,22 @@
+// hamburguer
+.hamburguer {
+  display: block;
+  color: #fff;
+  width: 20px;
+  border-top: 1px solid;
+  cursor: pointer;
+
+  @media(min-width: 1200px) {
+    display: none;
+  }
+}
+
+.hamburguer::after,
+.hamburguer::before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 4px;
+  background: currentColor;
+  position: relative;
+}

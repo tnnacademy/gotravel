@@ -20,7 +20,8 @@ const srcJs = [
   '../_src/js/vendors/slick.js',
   '../_src/js/inc/header-fixed.js',
   '../_src/js/inc/slider-avaliacoes.js',
-  '../_src/js/inc/anchor.js'
+  '../_src/js/inc/anchor.js',
+  '../_src/js/inc/hamburguer.js'
 ];
 
 gulp.task('js', () =>

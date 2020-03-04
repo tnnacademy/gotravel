@@ -1,17 +1,13 @@
 (function ($) {
+  // menu
+  $('.menu > li').on('click', function () {
+    var ind = $(this).index();
+    var roll = $('.anchor').eq(ind).offset().top - 100;
 
-  // ao rolar exibe menu fixo
-  // ---------------------------
-  $(window).scroll(function () {
-    var widthScreen = $(window).width();
-    var valScroll = $(window).scrollTop();
-    var target = $(".heroCta").outerHeight();
+    $('html, body').animate({
+      scrollTop: roll
+    }, 400);
 
-    if (valScroll > target && widthScreen >= 1200) {
-      $('.header').addClass('fixed');
-    } else {
-      $('.header').removeClass('fixed');
-    }  
+    return false;
   });
-
-})(jQuery);
+}(jQuery));
