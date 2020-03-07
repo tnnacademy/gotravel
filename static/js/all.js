@@ -12080,5 +12080,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
   $(".close-cortina").click(function () {
     $(".cortina").removeClass("show");
+    $("html").removeClass("overflow-hidden");
   });
 })(jQuery);

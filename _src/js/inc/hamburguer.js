@@ -11,6 +11,7 @@
   // ---------------------------
   $(".close-cortina").click(function () {
     $(".cortina").removeClass("show");
+    $("html").removeClass("overflow-hidden");
   });
 
 })(jQuery);
