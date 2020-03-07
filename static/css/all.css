@@ -3385,3 +3385,6 @@ body {
       color: #E7373A; }
     .subFooter p:first-child {
       margin-top: 0; }
+
+.overflow-hidden {
+  overflow: hidden; }

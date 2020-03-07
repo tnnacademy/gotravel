@@ -12073,6 +12073,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   // ---------------------------
   $(".hamburguer, .menu-mobile > li").click(function () {
     $(".cortina").toggleClass("show");
+    $("html").toggleClass("overflow-hidden");
   }); // close menu mobile
   // ---------------------------
 

@@ -4,6 +4,7 @@
   // ---------------------------
   $(".hamburguer, .menu-mobile > li").click(function () {
     $(".cortina").toggleClass("show");
+    $("html").toggleClass("overflow-hidden");
   });
 
   // close menu mobile
